@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<pre class="text">
+yeoman创建angular项目
+1.官网http://yeoman.io/learning/index.htms
+sudo npm install -g yo
+（
+运行yo，如果报错是文件夹权限的问题，请修改权限https://github.com/yeoman/yeoman.github.io/issues/282
+chmod 一下每个目录的权限
+chmod g+rwx /root /root/.config /root/.config/configstore
+）
+2.安装yeamon angualr生成器
+git网址https://github.com/yeoman/generator-angular
+npm install -g grunt-cli bower yo generator-karma generator-angular
+3.运行yo angular 创建项目
+（
+之前要是父目录创建过项目，重新在子目录创建，很可能生成项目的文件夹会发生错误。
+解决的办法，删除父目录里的.yo-rc.json文件 
+rm /Users/pursuer/.yo-rc.json
+mac 下查找文件find /Users -name "test.txt"
+https://github.com/yeoman/yeoman/issues/635
+
+）
+</pre>
+</body>
+</html>
