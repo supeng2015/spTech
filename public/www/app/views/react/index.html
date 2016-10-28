@@ -1,0 +1,43 @@
+<pre class="text">
+官网 https://facebook.github.io/react/
+react页面交互图书馆
+声明
+react 当数据改变时react会快速的提供正确的组件，声明视图让你更容易定位bug	
+组件基于
+|
+javascript写的组件，可以保持一个状态。
+
+学习一次写各个地方
+|
+react 也可以通过node提供服务
+
+一个简单的组件
+|
+react组件提供了一个render（）方法这个获取input数据返回
+使用一个XML语法成为JSX
+JSX是一个方式但不是不许的
+JSX通过编译可以编译成原生的javascript
+JSX
+class HelloMessage extends React.Component {
+  render() {
+    return <div>Hello {this.props.name}</div>;
+  }
+}
+ReactDOM.render(<HelloMessage name="Jane" />, mountNode);
+ROW javascript
+class HelloMessage extends React.Component {
+  render() {
+    return React.createElement(
+      "div",
+      null,
+      "Hello ",
+      this.props.name
+    );
+  }
+}
+ReactDOM.render(React.createElement(HelloMessage, { name: "Jane" }), mountNode);
+一个状态组件
+</pre>	
+<pre>
+https://github.com/yiminghe/learning-react 
+</pre>
