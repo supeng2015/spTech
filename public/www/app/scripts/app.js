@@ -23,7 +23,7 @@ angular
       f : ['angular','react','jquery','requirejs','es6','less','html5'],  
       b : ['node'],
       d : ['redis'],
-      s : ['mac','windows','linux'],
+      s : ['mac','windows'],
       v : ['git','svn'],
       t : ['grunt','webpack','gulp']
     }    
