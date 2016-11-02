@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>技术列表</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/www/bower_components/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <h3><a href="/www/app">返回文档</a></h3>
+    <ul id="tech-case-list">
+    </ul> 	
+    <script>
+      (function(){
+        var data = [
+          {n:'导出excel',u:'exportexcel.html'}
+        ] 
+        $.each(data,function(i,v){
+          $('#tech-case-list').append($('<li><a href="' + v.u +'">' + v.n + '</a></li>'));
+        })
+        
+      })(this)
+    </script>  
+  </body>
+</html>

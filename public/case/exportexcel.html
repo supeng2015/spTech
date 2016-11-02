@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Java Friends</title>
+  <script src="../www/bower_components/excellentexport/excellentexport.js"></script>
+</head>
+<body>
+<h2>demo</h2>
+<table id="datatable">
+  <tbody>
+    <tr>
+      <th>qqq</th>
+      <th>www</th>
+      <th>eee</th>
+    </tr>  
+    <tr>
+      <td>100</td> 
+      <td>200</td> 
+      <td>300</td>
+    </tr>
+    <tr>
+      <td colspan='3'>中文</td>
+    </tr>
+    <tr>
+      <td colspan='3'>
+        <ul>
+          <li>这是第一个</li>
+          <li>这是第二个</li>  
+          <li>这是第三个</li>
+          <li>这是第四个</li>
+          <li>这是第五个</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td colspan='3'>can't</td>
+    </tr>
+  </tbody>
+  </table>
+  <a download="somedata.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');">Export to Excel</a>
+  <hr>
+  <h2>extend</h2>
+  WindowBase64.atob() 函数用来解码一个已经被base-64编码过的数据。你可以使用 window.btoa() 方法来编码一个可能在传输过程中出现问题的数据，并且在接受数据之后，使用 window.atob() 方法来将数据解码。
+  <a href="http://www.cnblogs.com/jscode/archive/2013/04/27/3572239.html">blob对象</a>
+</body>
+</html>
