@@ -21,8 +21,8 @@ angular
   .run(function($rootScope){
     $rootScope.myTech = {
       f : ['angular','react','jquery','requirejs','es6','less','html5'],  
-      b : ['node'],
-      d : ['redis'],
+      b : ['nodejs'],
+      d : ['redis','mongodb'],
       s : ['mac','windows'],
       v : ['git','svn'],
       t : ['grunt','webpack','gulp']
