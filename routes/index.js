@@ -5,11 +5,11 @@ var path = require('path');
 var catalog = require('../middleware/catalog.js');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  catalog.mycatalog(path.__dirname);
+  req.session.username="supeng";
+  req.session.password="123456"
   res.render('index', { title: 'SP的技术文档' });
 });
 router.post('/myupload', function(req, res, next) {
-  //console.log(req.body);
   res.json({
     text : '上传成功'	
   })

@@ -24,15 +24,29 @@
           </label>
         </div>
         <br/>        
-        <input type="submit" value="提交">  
+        <input type="submit" value="登陆">  
       </form>
     </section>
     <% } %>
 
     <% if (t=='r') { %>
     <section>
-      <form>
-        这里是注册  
+      <form method="post" action="/auth/register">
+        <div>
+          <label>
+            <span>用户名 : </span>
+            <input name="username" type="text">
+          </label>
+        </div>
+        <br/>
+        <div>
+          <label>
+            <span>密码 : </span>
+            <input name="password" type="password">
+          </label>
+        </div>
+        <br/>        
+        <input type="submit" value="注册">  
       </form>
     </section>
     <% } %>
