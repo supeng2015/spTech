@@ -1,0 +1,18 @@
+<pre class="text">
+Mac下MySQL卸载方法	
+sudo rm /usr/local/mysql
+sudo rm -rf /usr/local/mysql*
+sudo rm -rf /Library/StartupItems/MySQLCOM
+sudo rm -rf /Library/PreferencePanes/My*
+vim /etc/hostconfig  (and removed the line MYSQLCOM=-YES-)
+rm -rf ~/Library/PreferencePanes/My*
+sudo rm -rf /Library/Receipts/mysql*
+sudo rm -rf /Library/Receipts/MySQL*
+sudo rm -rf /var/db/receipts/com.mysql.*
+
+http://www.cnblogs.com/TsengYuen/archive/2011/12/06/2278574.html
+</pre>
+
+<pre>
+下载安装到 /usr/local/mysql
+</pre>	

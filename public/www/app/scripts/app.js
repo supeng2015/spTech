@@ -16,17 +16,27 @@ angular
     'ngRoute',
     'ui.router',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'pascalprecht.translate',
+    'selectize'
   ])
   .run(function($rootScope){
     $rootScope.myTech = {
       f : ['angular','react','jquery','requirejs','es6','less','html5'],  
-      b : ['nodejs'],
-      d : ['redis','mongodb'],
+      b : ['nodejs','kibana','java','spark'],
+      d : ['redis','mongodb','mysql'],
       s : ['mac','windows'],
       v : ['git','svn'],
       t : ['grunt','webpack','gulp']
     }    
+  })
+  .config(function ($translateProvider) {
+    $translateProvider.translations('en', {
+      'TRANSLATION_ID': 'Hello there!',
+      'WITH_VALUES': 'The following value is dynamic: {{value}}'
+    });
+    $translateProvider.preferredLanguage('en');
+ 
   })
   .config(function($stateProvider,$urlRouterProvider){
     $stateProvider

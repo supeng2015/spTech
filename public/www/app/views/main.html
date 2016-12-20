@@ -11,6 +11,12 @@
     <a class="btn btn-lg btn-success" ng-href="/case/list.html">实例<span class="glyphicon glyphicon-ok"></span></a>
   </p>
 </div>
+<selectize config='myConfig' options='myOptions' ng-model="myModel"></selectize>
+<pre>{{ 'TRANSLATION_ID' | translate }}</pre>
+<pre>{{ translationId | translate }}</pre>
+<pre>{{ 'WITH_VALUES' | translate:'{value: 5}' }}</pre>
+<pre>{{ 'WITH_VALUES' | translate:values }}</pre>
+<input placeholder="{{translationId | translate}}">
 <div class="row marketing">
 </div>
 

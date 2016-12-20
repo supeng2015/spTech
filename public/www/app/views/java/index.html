@@ -1,0 +1,58 @@
+<pre class="text">
+javaweb 教程	
+http://www.cnblogs.com/xdp-gacl/p/3729033.html
+</pre>
+<pre class="text">
+mac tomcat启动步骤
+1，官网下载（我下的tomcat7）,解压文件夹
+2，改权限 sudo chmod 755 /Users/supeng/documents/web/spfile/tomcat/tomcat7/bin/*.sh  改动对应文件夹下的所有*.sh权限
+（
+  chmod 修改权限
+  7 拥有者有 读取，写入，执行权限
+  7 组用户有 读取，写入，执行权限
+  5 其他用户有 读取，执行权限(4+1 = 5)
+ ）
+3，进入对应文件夹启动 sudo sh ./bin/startup.sh
+4，关闭tomcat ./bin/shutdown.sh
+</pre>
+<pre class="text">
+配置端口
+tomcat文件夹下conf文件夹下server.xml
+找http协议的，修改端口。
+每次修改后必须重启。
+</pre>	
+<pre class="text">
+第6章JSP内置对象
+
+6.1 内置对象橄榄
+为简化开发提供了9个内置对象
+无需实例化，直接调用。
+
+6.2 4种属性范畴
+page:只在一个页面中保存属性，跳转之后无效。
+requst:只在一次请求中保存，服务器跳转后依然有效。
+session:在一次会话范围中，无论何种跳转都可以使用，但是新开浏览器无法使用。
+application:在整个服务器上保存，所有用户都可以使用。
+
+文档类型编码
+<%@ page contentType="text/html;charset=utf-8"%>
+
+6.3 request对象
+
+HttpServletRequest接口
+request.setCharacterEncoding("utf-8");
+
+6.4 response对象
+</pre>
+
+<pre class="text">
+第7章 javaBean
+
+7.1 javaBean简介
+
+优点
+Html和java代码分离
+
+7.2 在JSP中使用JavaBean
+
+</pre>	
